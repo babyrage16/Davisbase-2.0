@@ -1,0 +1,2 @@
+# Davisbase-2.0
+I have created a  rudimentary database engine that is loosely based on a hybrid between MySQL and SQLite, which is called DavisBase.  Like MySQL's InnoDB data engine (SDL), this project uses file-per-table approach to physical storage. Each database table will be physically  stored as a separate file. Each table file will be subdivided into logical sections of fixed equal size call pages.  The page_size is a configurable attribute, and supports a page size of 512 Bytes. 
